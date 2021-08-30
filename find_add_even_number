@@ -1,0 +1,6 @@
+
+
+mylist_number = [1,2,3,4,5,6]
+
+fins_add_even = [x % 2 for x in range(len(mylist_number))]
+print(fins_add_even)
