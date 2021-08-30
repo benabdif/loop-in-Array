@@ -11,7 +11,6 @@ def number(mylist):
     lownumber = 0 
     upnumber = len(mylist)
 
-
     while len(box) != len(mylist):
         for x in range(len(mylist)):
             if mylist[x] not in box:
