@@ -1,0 +1,15 @@
+# Print letter not repeting
+name = 'fffbbbafadhelbenabdoe'
+
+def myfun(name):
+    box = []
+    for x in range(len(name)):
+        letter = name[x]
+        if letter not in box:
+            box.append(letter)
+        else:
+            pass
+    return box
+
+m = myfun(name)
+print(m)
