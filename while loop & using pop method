@@ -1,0 +1,20 @@
+# using pop and while to delet name from Array to add to anather array
+name = ['Fadhel','Mohammed','Ali','Sam']
+
+def myname(name):
+    box = []
+    while name:
+        h = name.pop(-1)
+        print(name)
+        box.append(h)
+    
+    return name
+
+x = myname(name)
+print(x)
+
+
+
+input/ name = ['Fadhel','Mohammed','Ali','Sam']
+output/ name = []
+output/ box = ['Fadhel','Mohammed','Ali','Sam']
