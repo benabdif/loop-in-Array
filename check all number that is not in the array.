@@ -18,3 +18,30 @@ print(f)
 Input [1,2,3,4,10]
 putput = [1,2,3,4,5,6,7,8,9,10]
 
+
+
+
+
+
+
+Anather way: 
+num = [1,2,3,4,8]
+
+def mynum(num):
+  
+    while num[-2] + 1 != num[-1]:
+        N = 1
+        for x in range(len(num)):
+            if num[x] == N:
+                N = N + 1
+                
+            else:
+                num.insert(num[x-1],N)
+                N = N + 1         
+                
+    return num
+    
+        
+h = mynum(num)
+print(h)
+       
