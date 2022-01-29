@@ -1,3 +1,6 @@
+
+// Fadhel
+
 def prime_number():
     box = []
     for x in range(1, 100):
@@ -8,4 +11,5 @@ def prime_number():
 
 x = prime_number()
 print(x)
-    
+   
+   
