@@ -44,4 +44,29 @@ def mynum(num):
         
 h = mynum(num)
 print(h)
+
+
+
+# This is anather way to solve this problem
+
+number = [1,4,7,15,20]
+def num(number):
+    l = number[-1]
+    t = len(number)
+
+    while t < l:    
+        for x in range (len(number)-1):
+            if number[x + 1]-1 == number[x]:
+                pass
+            else:
+                number.insert(number[x],number[x] + 1)
+        t = t + 1
+    return number
+
+fadhel = num(number)
+print(fadhel)
+
+
+
+
        
