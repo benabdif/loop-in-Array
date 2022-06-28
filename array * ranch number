@@ -1,0 +1,8 @@
+num = [2,2,2,2,2]
+
+def fadhel(n):
+    u = int(input('Enter: '))
+    return n * u
+f = list(map(fadhel, num))
+
+print(f)
