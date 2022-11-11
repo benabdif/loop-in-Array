@@ -1,0 +1,28 @@
+
+# Find the longest word in the list 
+# Easyway & hardway, depend on your skills on programming
+
+#            6         4         10        1     3
+vawels = ['python', 'java', 'javascript', 'h', 'C++']
+
+Easy way:
+
+print(max(vawels, key=len))
+print(sorted(vawels, key=len)[-1])
+
+
+
+hard way: 
+
+def mylen(vawels):
+    box = 0
+    for x in range(len(vawels)):
+        num = len(vawels[x])
+        if num > box:
+            box = num
+    
+    for i in range(len(vawels)):
+        if len(vawels[i]) == box:
+            print(vawels[i])
+        
+mylen(vawels) 
